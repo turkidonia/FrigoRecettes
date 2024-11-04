@@ -13,10 +13,10 @@ const AfficherProduits = () => {
       console.error(error);
     }
   }
-  useEffect(() => {
+  useEffect(() => {//appel de API du backend pour afficher les produits dans le front
     console.log("test")
     getProduit();
-  }, []);
+  }, []);//on met tableau vide comme depandence de useEffect: lexecution de use effect qu'apres l'initialisation du tableau
 
   return (
     <div>
